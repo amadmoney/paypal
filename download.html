@@ -94,20 +94,6 @@ h1.big {
 }
 
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
-  div.title {
-    font-size: 20px;
-  }
-}
-
 div.list {
 	
   font-size: 30px;
@@ -116,6 +102,20 @@ div.list {
   z-index: 289;
 
 
+}
+
+	@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.list {
+    font-size: 20px;
+  }
 }
 
 </style>
