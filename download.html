@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
 <style>
 
 
@@ -56,8 +55,7 @@ body, html {height: 100%}
 
 #ssk1 {
 position: absolute;
-
-  -webkit-animation: fly 5s linear 0s infinite;
+ -webkit-animation: fly 5s linear 0s infinite;
     -moz-animation: fly 5s linear 0s infinite;
     -0-animation: fly 5s linear 0s infinite;
   animation: fly 5s linear 0s infinite;
@@ -68,7 +66,7 @@ position: absolute;
 
 #ssk2 {
 position: absolute;
-
+z-index: 90;
   -webkit-animation: fly 5s linear 0s infinite;
     -moz-animation: fly 5s linear 0s infinite;
     -0-animation: fly 5s linear 0s infinite;
@@ -78,6 +76,17 @@ animation-direction: reverse;
 }
 
 {animation-timing-function: ease-in-out;}
+
+
+div.text-block {
+  position: absolute;
+  color: white;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+
+
 
 h1.big {
 	
@@ -89,17 +98,17 @@ h1.big {
   font-family: 'Mom Regular', Arial, sans-serif;
   padding: 60px;
   overflow-wrap: break-word;
-  z-index: 100;
+  z-index: 200;
 
 }
 
 
-div.list {
+h2.small {
 	
   font-size: 35px;
   color: white;
   font-family: 'Mom Regular', Arial, sans-serif;
-  z-index: 100;
+  z-index: 200;
   padding-left: 60px;
 
 
@@ -109,64 +118,62 @@ div.list {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-  }
-}
-
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
-  div.list {
-    font-size: 15px;
-    line-height: 2;
-	  z-index: 100;
-   
+    
   }
 }
 
 	/* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
   h1.big {
-   font-size: 30px;
-	  z-index: 100;
-  
+   font-size: 20px;
+   
+  }
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+ h2.small {
+    font-size: 18px;
+    line-height: 3;  
+    
   }
 }
+
 
 </style>
 </head>
 
 
 <!-- Page Content -->
+
+
+<div class="text-block">
+
 <h1 class="big">
 
-<div class="title">
-
-You Can <br> download  <br> all
-of <br>  DJ PAYPAL <br> Music <br>
-4 Free.99 
+You Can download <br>
+all of DJ PAYPAL <br>
+Music 4 Free.99 
 
 </h1>
 
-</div>
+<h2 class="small">
 
-<div class="list">
 
-Here's How: 
-
-<p>
+Here's How: <br>
 
 1. Download/setup Soulseek <br>
 
-2. Search for dj paypal + <br> 
+2. Search for dj paypal <br>  +
 the title of any release <br>
 
-3. ?????? <br>
+3. ?????? <br>  
+
 4. Prophet <br>
 
-</p>
+
+</h2>
 
 </div>
-
-
 
  <div id="ssk1">
 
@@ -182,6 +189,9 @@ the title of any release <br>
 
 
 </div>
+
+
+
 
 </body>
 </html>
